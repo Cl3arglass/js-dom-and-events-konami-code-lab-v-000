@@ -6,7 +6,8 @@ function init() {
 input.addEventListener('keydown', function(e) {
   let index = 0;
 
-  const key = parseInt(e.detail || e.which);
+  const key = parseInt(e.detail || e.which || e.location);
+
 
     if (key === code[index]) {
       index++;
