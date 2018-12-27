@@ -1,4 +1,4 @@
-const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+const konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init() {
   const input = document.body
@@ -6,10 +6,10 @@ function init() {
 input.addEventListener('keydown', function(e) {
   let index = 0;
 
-  const key = parseInt(e.detail || e.which || e.location);
+  const key = parseInt(e.detail || e.which || e.location || e.code);
 
 
-    if (key === code[index]) {
+    if (key === konami[index]) {
       index++;
 
       if (index === code.length) {
