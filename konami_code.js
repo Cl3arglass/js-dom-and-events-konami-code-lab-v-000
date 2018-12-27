@@ -12,7 +12,7 @@ input.addEventListener('keydown', function(e) {
     if (key === konami[index]) {
       index++;
 
-      if (index === code.length) {
+      if (index === konami.length) {
         alert("Hurray!");
 
         index = 0;
@@ -20,7 +20,7 @@ input.addEventListener('keydown', function(e) {
     } else {
       index = 0;
     }
-    console.log(e.detail, e.which, e.location)
+    console.log(index)
     });
 
 }
