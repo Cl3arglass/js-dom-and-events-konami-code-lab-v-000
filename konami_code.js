@@ -6,7 +6,7 @@ function init() {
 input.addEventListener('keydown', function(e) {
   let index = 0;
 
-  const key = parseInt(e.code);
+  const key = parseInt(e.detail || e.which || e.location);
 
 
     if (key === konami[index]) {
@@ -20,7 +20,7 @@ input.addEventListener('keydown', function(e) {
     } else {
       index = 0;
     }
-    console.log(e.detail)
+    console.log(e.detail, e.which, e.location)
     });
 
 }
