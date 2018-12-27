@@ -20,7 +20,7 @@ input.addEventListener('keydown', function(e) {
     } else {
       index = 0;
     }
-    console.log(e.code)
+    console.log(e.detail)
     });
 
 }
