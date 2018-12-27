@@ -10,7 +10,7 @@ input.addEventListener('keydown', function(e) {
 
 
     if (key === konami[index]) {
-      index++;
+      index = index + 1;
 
       if (index === konami.length) {
         alert("Hurray!");
