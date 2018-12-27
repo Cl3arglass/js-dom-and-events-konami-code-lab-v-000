@@ -6,7 +6,7 @@ function init() {
 input.addEventListener('keydown', function(e) {
   let index = 0;
 
-  const key = parseInt(e.detail || e.which || e.location);
+  const key = parseInt(e.code);
 
 
     if (key === konami[index]) {
